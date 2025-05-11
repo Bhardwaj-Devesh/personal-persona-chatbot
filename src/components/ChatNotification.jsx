@@ -7,9 +7,9 @@ const ChatNotification = ({ onExpand }) => {
 
   const messages = [
     "Want to know about me? Let's chat! 👋",
-    "Hi there! I'm Devesh, a Software Developer💻",
-    "Ask me anything about tech or coding!🚀",
-    "Let's discuss web development or AI!🤖"
+    "Curious about my journey? Tap to chat!🚀",
+    "Want to see cool projects I've built? Let's talk!✨",
+    "Let's discuss software development or AI!🤖"
   ];
 
   const showNotification = () => {
@@ -20,18 +20,18 @@ const ChatNotification = ({ onExpand }) => {
       setIsLeaving(true);
       // Actually hide after fade out animation (0.5s)
       setTimeout(() => setIsVisible(false), 500);
-    }, 10000);
+    }, 8000);
   };
 
   useEffect(() => {
     // Show first notification immediately
     showNotification();
 
-    // Show notification every 15 seconds
+    // Show notification every 45 seconds
     const interval = setInterval(() => {
       setMessage((prev) => (prev + 1) % messages.length);
       showNotification();
-    }, 15000);
+    }, 45000);
 
     return () => {
       clearInterval(interval);
