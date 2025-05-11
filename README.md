@@ -22,7 +22,7 @@ Before you begin, ensure you have installed:
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Bhardwaj-Devesh/personal-persona-chatbot.git
 cd personal-persona-portfolio-chatbot
 ```
 
@@ -112,4 +112,4 @@ npm run preview
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
