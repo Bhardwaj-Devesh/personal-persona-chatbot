@@ -78,7 +78,7 @@ const getLinkName = (href, children) => {
 
 const ChatWindow = ({ messages, loading }) => {
   return (
-    <div className="h-full overflow-y-auto p-4 space-y-4 scroll-smooth">
+    <div className="h-full overflow-y-auto p-4 space-y-4 scroll-smooth bg-transparent">
       {messages.length === 0 ? (
         <div className="h-full flex flex-col items-center justify-center text-gray-400">
           <div className="text-center p-6 max-w-md">

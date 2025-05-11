@@ -168,7 +168,7 @@ function App() {
       {!isExpanded && <ChatNotification onExpand={() => setIsExpanded(true)} />}
       
       {/* Chat Widget */}
-      <div className={`fixed bottom-4 right-4 z-50 transition-all duration-500 ease-in-out ${isExpanded ? 'w-[400px] h-[600px]' : 'w-16 h-16'}`}>
+      <div className={`fixed bottom-4 right-4 z-50 transition-all duration-500 ease-in-out bg-transparent ${isExpanded ? 'w-[400px] h-[600px]' : 'w-16 h-16'}`}>
         {!isExpanded ? (
           <button
             onClick={() => setIsExpanded(true)}
