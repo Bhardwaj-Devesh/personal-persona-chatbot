@@ -27,11 +27,11 @@ const ChatNotification = ({ onExpand }) => {
     // Show first notification immediately
     showNotification();
 
-    // Show notification every 45 seconds
+    // Show notification every 20 seconds
     const interval = setInterval(() => {
       setMessage((prev) => (prev + 1) % messages.length);
       showNotification();
-    }, 45000);
+    }, 20000);
 
     return () => {
       clearInterval(interval);
